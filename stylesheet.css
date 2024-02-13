@@ -1,34 +1,74 @@
 * {
     box-sizing: border-box;
-    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
+    margin: 0;
 }
 
-.topnavi {
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F9E5E5;
-    text-align: center;
-    color: #709067;
-    position: sticky;
+}
+
+.logo{
+    max-height: 130px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.topnav {
     overflow: hidden;
-    z-index: 10;
-    min-height: 50px;
-    top: 0;
-}
-.topnavi a {
-    float: right;
-    display: block;
+    background-color: #F9E5E5;
+  }
+  
+.topnav #myLinks {
+    display: none;
+  }
+  
+
+  .topnav a {
     color: #4F604D;
-    text-align:center;
-    padding: 14px 14px;
+    padding: 14px 30px;
     text-decoration: none;
+    font-size: 28px;
+    display: block;
+    text-align: center;
+    background-color: #F9E5E5;
+  }
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-#logo {
+
+.social-icons a{
+    padding: 15px;
+
+}
+  
+  .topnav a.icon {
+    background: #F9E5E5;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+  
+  .topnav a:hover {
+    background-color: #F9E5E5;
+    color: #709067;
+  }
+  
+  .shopping-bag {
     display: flex;
     align-items: center;
-    width: 200px;
-    height: 100px;
-    border-radius: 5px;
+    position: absolute;
+    right: 80px; 
+    top: 30px;
 }
 
 .img1 {
@@ -38,18 +78,20 @@
 }
 
 .box1 {
-    width:800px;
+    width:80%;
     height: 400px;
     background-color: aqua;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin: auto;
 }
 
 .grid1 {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
+        display: flex;
+        flex-direction: row;
         gap:20px;
         padding: 5px;
+        width: 80%;
+        justify-content: space-between;
+        margin: auto;
 }
 
 .foto1 {
@@ -85,6 +127,8 @@ h2 {
     background-color: transparent;
 }
 
+
+
 .footer {
     height: 200px;
     width: auto;
@@ -102,20 +146,5 @@ h2 {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
-    
 
-}
-
-.go-top-btn {
-    position: fixed;
-    bottom: 35px;
-    right: 35px;
-    border-radius: 70%;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-    border: 2px solid #333333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
