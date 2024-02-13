@@ -148,3 +148,17 @@ h2 {
     margin-top: 50px;
 
 }
+
+.go-top-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    border-radius: 70%;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
