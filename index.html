@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-<body>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <script src="haisJs.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/wvt6dyc.css">
+</head>
 
+<body onload="showModal()">
+    <div id="modalbox">
+        <img src="images/cookies.png" class="cookies">
+        <p>Vi bruger cookies for at optimere brugeroplevelsen</p>
+        <button type="button" onclick="closeModal()">Accepter</button>
+        <img src="images/close.png" class="close-icon" onclick="closeModal()">
+    </div>
 
-    <!-- Top Navigation Menu -->
+  
 <div class="topnav">
 
     <div class="logo-container">
@@ -43,59 +52,192 @@
 </div>
 
 <script src="burgermenu.js"></script>
+
+    <section>
+        <div class="img1">
+        <img src="images/Header2-scaled.jpg" style="width: 100%;">
+    </div>
+    </section>
   
     
-
-
-
-    <section class="img1">
-       <img src="images/Header2-scaled.jpg" alt="Billede af keramik">
-
-    </section>
-
-    <section>
-        <div class="box1">
-
+<section>
+    <div class="box1">
+        <img class="kera" src="images/keramik2.jpg" alt="">
+        <div class="kera_text">
+            <p>Se vores unikke udvalg</p>
+            <p class="skrift">HÅNDLAVET KERAMIK</p>
+            <p>Produceret og designet på Kreta i Grækenland</p> 
         </div>
+    </div>
+</section>
+
+<section>
+    <div class="grid1">
+        <div class="foto1" onmouseover="showText(this)" onmouseout="hideText(this)">
+            <img src="images/kop4.png" alt="">
+            <div class="addToChartText">Tilføj til kurv</div>
+        </div>
+
+        <div class="foto1" onmouseover="showText(this)" onmouseout="hideText(this)">
+            <img src="images/kop3.png" alt="">
+            <div class="addToChartText">Tilføj til kurv</div>
+        </div>
+
+        <div class="foto1" onmouseover="showText(this)" onmouseout="hideText(this)">
+            <img src="images/kop2.png" alt="">
+            <div class="addToChartText">Tilføj til kurv</div>
+        </div>
+
+        <div class="foto1" onmouseover="showText(this)" onmouseout="hideText(this)">
+            <img src="images/kop1.png" alt="">
+            <div class="addToChartText">Tilføj til kurv</div>
+        </div>
+    </div>
+
+    <script>
+        function showText(element) {
+            var textElement = element.querySelector('.addToChartText');
+            textElement.style.display = 'block';
+        }
+
+        function hideText(element) {
+            var textElement = element.querySelector('.addToChartText');
+            textElement.style.display = 'none';
+        }
+    </script>
+
+
+    <div class="grid2">
+        <div>
+            <p>Kop</p>
+            <p>Kr. 129.00</p>
+        </div>
+        <div>
+            <p>Kop</p>
+            <p>Kr. 129.00</p>
+        </div>
+        <div>
+            <p>Frokost tallerken</p>
+            <p>Kr. 129.00</p>
+        </div>
+        <div>
+            <p>Kop</p>
+            <p>Kr. 129.00</p>
+        </div>
+    </div>
+</section>
     
-    </section>
-
-    <section>
-        <div class="grid1">
-            <div class="foto1">
-
-
-            </div>
-
-            <div class="foto1">
-
-            </div>
-
-            <div class="foto1">
-
-            </div>
-
-            <div class="foto1">
-
-            </div>
-
-        </div>
-    </section>
-
     <section>
         <div class="box2">
             <h1>Unika er en café, hvor du kan nyde morgenmad, frokost og økologisk hjemmebag sammen med koldpresset juice og en kop kaffe brygget med kærlighed på økologiske kaffebønner fra Guatamala. Unika er en familiedrevet virksomhed, hvor kvalitet og kærlighed er den vigtigste ingrediens.</h1>
 
             <h2>Find os også her: Bar' Unika - Brandts Passage nr. 2.</h2>
-           
         </div>
     </section>
 
     <section>
+    
+        <div class="slideshow box">
+            <div class="mySlides fade">
+                <img src="images/slide1.png">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slide2.png">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slide3.png">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slide4.png">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slide5.png">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slide6.png">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slide7.png">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slide8.png">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/image1.jpeg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/image2.jpeg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/image3.jpeg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/image4.jpeg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/image5.jpeg" >
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+
+        <script>
+            let slideIndex = 0;
+            showSlides ();
+
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName('mySlides');
+            let dots = document.getElementsByClassName ('dot');
+                for (i = 0; i < slides.length; i++) {
+                 slides [i].style.display = 'none';
+            }
+
+            slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                for (i = 0; i < dots.length; i++) {
+                dots [i].className = dots [i].className.replace('active','')
+                }
+
+             slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); 
+        }
+        </script>
+    </section>
+    
+
+    <section>
         <div class="footer">
-            <div glass="kolonne">
+            <div class="kolonne">
                 
-                    <h1>Kontakt</h1>
+                    <h1><b>Kontakt</b></h1>
                 <p>
                     Cafe Unika
                 </p>
@@ -118,9 +260,9 @@
                 </p>
 
             </div>
-            <div glass="kolonne">
+            <div class="kolonne">
                 
-                    <h1>Åbningstider</h1>
+                    <h1><b>Åbningstider</b></h1>
                 <p>
                     Alle hverdage kl. 08.30-16.30
                 </p>
@@ -137,7 +279,7 @@
                 </p>
                 
             </div>
-            <div glass="kolonne">
+            <div class="kolonne">
                 
                     <p>Find vores kontrolrapporter her </p>
                     <p>Politik for refundering og returnerede varer</p>
